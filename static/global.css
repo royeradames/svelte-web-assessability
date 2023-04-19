@@ -58,7 +58,7 @@ ul {
 
 .primary-text-color {
   /* Set color to a new value with at least 3:1 contrast ratio */
-  color: #4D4D4D;
+  color: #CCCCCC;
 }
 
 .secondary-text-color {
@@ -102,7 +102,7 @@ ul {
 .spotlight-list {
   display: flex;
   /* Change flex-direction to match HTML content order */
-  flex-direction: row;
+  flex-direction: row-reverse;
   margin: 0;
   padding: 0;
   width: 800px;
@@ -263,13 +263,13 @@ ul {
 
 .summary {
   /* Change font-size below to be between 18 to 20 pixels */
-  font-size: 20px;
+  font-size: 12px;
   /* Set line-height to 1.5 */
-  line-height: 1.5;
+
   /* Set letter-spacing to 1.2 */
-  letter-spacing: 1.2;
+
   /* Change text-align to left */
-  text-align: left;
+  text-align: justify;
 
   overflow: hidden;
 }
@@ -316,9 +316,9 @@ ul {
 
 a:hover {
   /* Set links to change color when they are hovered over */
-  color: #990000;
+
   /* Set cursor to pointer */
-  cursor: pointer;
+
 }
 
 .spotlight-item-sm {
@@ -332,13 +332,12 @@ nav select {
 input:focus {
   outline: none;
   /* Set solid border of size 1px and of a color of your choice */
-  border: solid 1px black;
 
 }
 
 .premium {
   /* Hide premium content */
-  display: none;
+
 }
 
 @media screen and (max-width: 800px) {
@@ -377,7 +376,7 @@ input:focus {
   .spotlight-list {
     display: flex;
     /* Change flex-direction to match HTML content order */
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -401,10 +400,4 @@ input:focus {
     background-color: #FFF;
   }
 
-}
-
-@media print {
-  a::after {
-    content: " (" attr(href) ")";
-  }
 }
