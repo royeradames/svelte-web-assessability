@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-    <link rel="stylesheet" href="/styles.css" />
-		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="%sveltekit.assets%/favicon.png"/>
+  <meta name="viewport" content="width=device-width"/>
+  %sveltekit.head%
+  <link rel="stylesheet" href="../public/styles.css"/>
+
+</head>
+<body data-sveltekit-preload-data="hover">
+<!--		<div style="display: contents">%sveltekit.body%</div>-->
+<!-- HEADER -->
+  <header>
+  <div class='header-content'>
+    <img src='https://static-assets.codecademy.com/Courses/Learn-CSS/Projects/code-logo.png' id='logo'/>
+    <nav>
+      <ul class='nav-link-list'>
+        <li>
+          <a href='/home'>home</a>
+        </li>
+        <li>
+          <a href='/editors-choice'>editor's choice</a>
+        </li>
+        <li>
+          <a href='/most-popular'>most popular</a>
+        </li>
+        <li class='premium'>
+          <a href='/for-you'>for you</a>
+        </li>
+      </ul>
+
+      <select>
+        <option value='' selected='selected'>Navigation</option>
+        <option value='/'><a href='/home'>Home</a></option>
+        <option value='/editors-choice'><a href='/editors-choice'>Editor's Choice</a></option>
+        <option value='/most-popular'><a href='/most-popular'>Most Popular</a></option>
+        <option value='/for-you'><a href='/for-you'>For You</a></option>
+      </select>
+    </nav>
+    <!-- Hide the search icon below from screen readers -->
+    <span class='fas fa-search search-icon secondary-text-color' aria-hidden="true"></span>
+    <div class='search-container'>
+      <input class='search-input' placeholder='Find a story...'/>
+    </div>
+  </div>
+</header>
+</body>
 </html>
